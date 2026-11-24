@@ -25,11 +25,31 @@
 - Suspicious hostname:
   securebank-example.com.verify-account.invalid
 
+
 ## 4. Authentication Analysis
 
-- SPF: Not yet evaluated
-- DKIM: Not yet evaluated
-- DMARC: Not yet evaluated
+| Mechanism | Result | Observation |
+|---|---|---|
+| SPF | FAIL | Sender failed SPF evaluation |
+| DKIM | NONE | No DKIM signature available |
+| DMARC | FAIL | Visible From domain failed DMARC |
+
+### Header Information
+
+- From Domain: securebank-example.com
+- Return-Path Domain: mailer-example.net
+- Message-ID Domain: mailer-example.net
+
+### Findings
+
+1. Visible sender and Return-Path use different domains.
+2. Message-ID uses mailer-example.net.
+3. SPF authentication failed.
+4. No DKIM signature was available.
+5. DMARC authentication failed.
+
+Note: All header results are simulated training evidence.
+
 
 ## 5. Preliminary Verdict
 
