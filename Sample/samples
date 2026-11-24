@@ -1,0 +1,14 @@
+Email Samples
+
+This directory contains simulated or authorised email samples used for phishing investigation and analysis.
+
+Planned Samples
+
+Sample ID	Scenario	Status
+PH-001	Banking impersonation	Pending
+PH-002	Delivery notification	Pending
+PH-003	Business invoice fraud	Pending
+
+Safety Notice
+
+All samples will be used for educational purposes. Suspicious attachments will not be executed, and private or confidential email data will not be published.
