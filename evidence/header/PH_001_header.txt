@@ -1,0 +1,16 @@
+
+From: Secure Banking Support <security@securebank-example.com>
+To: customer@example.com
+Subject: Urgent: Your Account Has Been Temporarily Restricted
+Date: Mon, 23 Nov 2026 10:30:00 +0530
+Message-ID: <20261123.103000.12345@mailer-example.net>
+Return-Path: <bounce@mailer-example.net>
+
+Received: from mailer-example.net (unknown [203.0.113.45])
+    by mx.example-recipient.net with ESMTP;
+    Mon, 23 Nov 2026 10:30:05 +0530
+
+Authentication-Results: mx.example-recipient.net;
+    spf=fail smtp.mailfrom=mailer-example.net;
+    dkim=none;
+    dmarc=fail header.from=securebank-example.com;
