@@ -51,11 +51,43 @@
 Note: All header results are simulated training evidence.
 
 
-## 5. Preliminary Verdict
+## 5. Final Investigation Verdict
 
-Suspicious — further investigation required.
+Verdict: PHISHING
+
+Confidence: High (within simulated evidence)
+
+### Supporting Evidence
+
+1. Email uses banking identity impersonation.
+2. Message creates urgency through a 24-hour deadline.
+3. SPF authentication failed.
+4. DKIM signature was unavailable.
+5. DMARC authentication failed.
+6. Suspicious hostname uses misleading banking-related wording.
+7. Email requests account verification through a suspicious link.
+
+### Analyst Conclusion
+
+The combined email content, authentication results and URL
+characteristics indicate a simulated banking phishing attempt.
+
+The verdict is based on the supplied training evidence,
+not a live investigation.
+
 
 ## 6. Investigation Limitations
 
 The sample is simulated and does not contain
 original transport headers or actual authentication results.
+
+## 7. Recommended Mitigation
+
+1. Do not click the suspicious URL.
+2. Do not submit banking credentials.
+3. Report the email to the organization's security team.
+4. Block or quarantine confirmed malicious messages.
+5. Investigate similar emails received by other users.
+6. Monitor for related suspicious domains and sender activity.
+7. Educate users about urgency-based phishing attacks.
+
