@@ -3,7 +3,7 @@ A Junior SOC Analyst portfolio project focused on analyzing simulated phishing e
 Cases
 ￼ PH-001 — Banking Impersonation (Completed): Report · Sample · Header · URL Evidence
 ￼ PH-002 — Delivery Notification (Completed): Suspicious URLs & social engineering
-￼ PH-003 — Business Invoice (Planned): Business Email Compromise (BEC) indicators
+￼ PH-003 — Business Invoice (Completed): Business Email Compromise (BEC) indicators
 What This Project Covers
 ￼ Header & Routing Analysis: Tracing ⁠From⁠, ⁠Return-Path⁠, ⁠Message-ID⁠, and ⁠Received⁠ hops for sender mismatches.
 ￼ Email Authentication: Evaluating ⁠SPF⁠, ⁠DKIM⁠, and ⁠DMARC⁠ results to detect domain spoofing.
