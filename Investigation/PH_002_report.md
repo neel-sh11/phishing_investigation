@@ -5,7 +5,7 @@
 
 - Case ID: PH-002
 - Scenario: Delivery Notification Fraud
-- Investigation Status: In Progress
+- Investigation Status: Completed
 - Email Type: Simulated phishing email
 - Initial Assessment: Suspicious
 
