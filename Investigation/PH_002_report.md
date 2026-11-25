@@ -25,12 +25,31 @@
 3. Fear of parcel return.
 4. Unexpected redelivery payment request.
 5. Suspicious delivery-related URL.
-
 ## 4. Authentication Analysis
 
-- SPF: Not yet evaluated
-- DKIM: Not yet evaluated
-- DMARC: Not yet evaluated
+| Mechanism | Result | Observation |
+|---|---|---|
+| SPF | PASS | bulk-mail.example.net authenticated |
+| DKIM | PASS | Signature verified for bulk-mail.example.net |
+| DMARC | FAIL | Authenticated domains do not align with visible From |
+
+### Header Information
+
+- From Domain: parcel-notification.example.invalid
+- Return-Path Domain: bulk-mail.example.net
+- Message-ID Domain: bulk-mail.example.net
+- SPF Domain: bulk-mail.example.net
+- DKIM Domain: bulk-mail.example.net
+
+### Findings
+
+1. SPF authentication passed.
+2. DKIM authentication passed.
+3. Both authenticated domains differ from the visible From domain.
+4. DMARC failed due to alignment failure.
+
+Note: All authentication results are simulated training evidence.
+
 
 ## 5. Preliminary Verdict
 
