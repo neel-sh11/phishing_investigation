@@ -1,0 +1,16 @@
+
+From: Parcel Delivery Support <support@parcel-notification.example.invalid>
+To: customer@example.com
+Subject: Delivery Attempt Failed - Action Required
+Date: Wed, 25 Nov 2026 09:15:00 +0530
+Message-ID: <delivery.20261125.091500@bulk-mail.example.net>
+Return-Path: <bounce@bulk-mail.example.net>
+
+Received: from bulk-mail.example.net (unknown [198.51.100.25])
+    by mx.example-recipient.net with ESMTP;
+    Wed, 25 Nov 2026 09:15:05 +0530
+
+Authentication-Results: mx.example-recipient.net;
+    spf=pass smtp.mailfrom=bulk-mail.example.net;
+    dkim=pass header.d=bulk-mail.example.net;
+    dmarc=fail header.from=parcel-notification.example.invalid;
