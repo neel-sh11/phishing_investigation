@@ -50,12 +50,44 @@
 
 Note: All authentication results are simulated training evidence.
 
+## 5. Final Investigation Verdict
 
-## 5. Preliminary Verdict
+Verdict: PHISHING
 
-Suspicious — further investigation required.
+Confidence: High (within simulated evidence)
+
+### Supporting Evidence
+
+1. Delivery service impersonation.
+2. Urgency-based social engineering.
+3. Unexpected redelivery fee request.
+4. SPF passed but DMARC alignment failed.
+5. Suspicious hostname and payment-related URL path.
+6. Request for personal and financial information.
+
+### Analyst Conclusion
+
+The email exhibits characteristics of a simulated
+delivery notification phishing attempt.
+
+The combination of deceptive email content, sender
+identity mismatch and suspicious URL supports the
+phishing verdict.
+
+All findings are based on simulated training evidence.
 
 ## 6. Investigation Limitations
 
 The sample is simulated and does not contain
 original transport headers or actual authentication results.
+
+## 7. Recommended Mitigation
+
+1. Do not interact with the suspicious URL.
+2. Do not submit personal or payment information.
+3. Report the email to the organization's security team.
+4. Quarantine similar messages.
+5. Investigate other recipients who received the email.
+6. Monitor for related sender and hostname indicators.
+7. Educate users about fake delivery notifications.
+
