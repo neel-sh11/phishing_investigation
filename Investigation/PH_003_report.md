@@ -27,11 +27,32 @@
 4. Financial manipulation targeting the finance department.
 5. Potential Business Email Compromise (BEC).
 
+
 ## 4. Authentication Analysis
 
-- SPF: Not yet evaluated
-- DKIM: Not yet evaluated
-- DMARC: Not yet evaluated
+| Mechanism | Result | Observation |
+|---|---|---|
+| SPF | PASS | external-mail.example.net authenticated |
+| DKIM | PASS | Signature verified for external-mail.example.net |
+| DMARC | FAIL | Authenticated domains do not align with visible From |
+
+### Header Information
+
+- From Domain: global-supplies.example.invalid
+- Return-Path Domain: external-mail.example.net
+- Message-ID Domain: external-mail.example.net
+- SPF Domain: external-mail.example.net
+- DKIM Domain: external-mail.example.net
+
+### Findings
+
+1. SPF authentication passed.
+2. DKIM authentication passed.
+3. Both authentication domains differ from the visible From domain.
+4. DMARC failed due to domain alignment failure.
+
+Note: All header information and authentication outcomes
+are simulated training evidence.
 
 ## 5. Preliminary Verdict
 
