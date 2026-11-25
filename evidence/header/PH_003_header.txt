@@ -1,0 +1,16 @@
+
+From: Accounts Department <accounts@global-supplies.example.invalid>
+To: finance@company.example
+Subject: Urgent: Updated Payment Details for Invoice INV-2026-1042
+Date: Wed, 25 Nov 2026 10:00:00 +0530
+Message-ID: <invoice.20261125.100000@external-mail.example.net>
+Return-Path: <bounce@external-mail.example.net>
+
+Received: from external-mail.example.net (unknown [192.0.2.80])
+    by mx.company.example with ESMTP;
+    Wed, 25 Nov 2026 10:00:05 +0530
+
+Authentication-Results: mx.company.example;
+    spf=pass smtp.mailfrom=external-mail.example.net;
+    dkim=pass header.d=external-mail.example.net;
+    dmarc=fail header.from=global-supplies.example.invalid;
