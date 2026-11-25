@@ -5,7 +5,7 @@
 
 - Case ID: PH-001
 - Scenario: Banking Impersonation
-- Investigation Status: In Progress
+- Investigation Status: Completed
 - Email Type: Simulated phishing email
 - Initial Assessment: Suspicious
 
