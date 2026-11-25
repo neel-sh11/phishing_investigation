@@ -2,7 +2,7 @@ Phishing Email Investigation
 A Junior SOC Analyst portfolio project focused on analyzing simulated phishing emails using header inspection, SPF/DKIM/DMARC checks, URL analysis, and structured incident reporting.
 Cases
 ￼ PH-001 — Banking Impersonation (Completed): Report · Sample · Header · URL Evidence
-￼ PH-002 — Delivery Notification (Planned): Suspicious URLs & social engineering
+￼ PH-002 — Delivery Notification (Completed): Suspicious URLs & social engineering
 ￼ PH-003 — Business Invoice (Planned): Business Email Compromise (BEC) indicators
 What This Project Covers
 ￼ Header & Routing Analysis: Tracing ⁠From⁠, ⁠Return-Path⁠, ⁠Message-ID⁠, and ⁠Received⁠ hops for sender mismatches.
