@@ -1,0 +1,28 @@
+
+From: Parcel Delivery Support <support@parcel-notification.example.invalid>
+To: customer@example.com
+Date: Wed, 25 Nov 2026 09:15:00 +0530
+Subject: Delivery Attempt Failed - Action Required
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Dear Customer,
+
+We attempted to deliver your parcel today, but the delivery
+could not be completed.
+
+Reason: Incomplete delivery address.
+
+Your parcel is currently on hold at our distribution centre.
+
+To arrange another delivery, please confirm your address
+and pay the required redelivery processing fee.
+
+Redelivery link:
+https://parcel-redelivery.example.invalid/fee?id=PH002
+
+Please complete this process within 12 hours to avoid
+your parcel being returned to the sender.
+
+Regards,
+Parcel Delivery Support Team
